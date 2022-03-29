@@ -1,0 +1,84 @@
+.card{
+    position: relative;
+    width: 264px;
+    height: 120px;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.0625rem rgba(0,0,0,0.05),0 0 0.0625rem rgba(0,0,0,0.25);
+    border-radius: 4px;
+    transition: transform 0.25s;
+}
+
+.card .card:nth-child(1), .card .card:nth-child(2){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .card:nth-child(1){
+    width: 248px;
+    height: 120px;
+    top: calc(50% + 4px);
+    z-index: -1;
+    /* transition-delay: 0s; */
+}
+
+.card .card:nth-child(2){
+    width: 232px;
+    height: 120px;
+    top: calc(50% + 8px);
+    z-index: -2;
+    /* transition-delay: 0.1s; */
+}
+
+.card:hover .card:nth-child(1){
+    transform: translate(-50%, -50%) rotateZ(-2deg);
+}
+
+.card:hover .card:nth-child(2){
+    transform: translate(-50%, -50%) rotateZ(-4deg);
+}
+
+.half-circle-container{
+    position: absolute;
+    left:0px;
+    top:4px;
+    overflow: hidden;
+    width: 14px;
+    height: 28px;
+}
+
+.half-circle{
+    background: lightgrey;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    left: -14px;
+    top: 0;
+}
+
+.circle{
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: blue;
+}
+
+.card:focus{
+    outline: none;
+}
+
+.card:focus .border{
+    border: 2px solid blue;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+    z-index: 1;
+}

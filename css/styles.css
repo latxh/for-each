@@ -1,0 +1,43 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(90deg, #FAFAFA 21px, transparent 1%) center, linear-gradient(#FAFAFA 21px, transparent 1%) center, #EBECED;
+    background-size: 25px 25px;
+}
+
+#collapsed-cards {
+    /* max-width: 640px; */
+    padding: 16px;
+}
+
+h2 {
+    margin: 0 0 16px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #2A2C2D;
+    margin: 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #72767A;
+    margin: 0;
+}
